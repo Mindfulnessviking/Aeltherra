@@ -1,0 +1,25 @@
+{
+  "characters": [
+    {
+      "name": "Kaelen Swiftblade",
+      "class": "Paladin",
+      "level": 5,
+      "ancestry": "Human",
+      "note": "Previous life: Age of Ashes warrior"
+    },
+    {
+      "name": "Lyra Moonshadow",
+      "class": "Wizard",
+      "level": 4,
+      "ancestry": "Elf",
+      "note": "Previous life: Age of Crowns diplomat"
+    },
+    {
+      "name": "Thorn Oakenshield",
+      "class": "Ranger",
+      "level": 4,
+      "ancestry": "Dwarf",
+      "note": "Previous life: Age of Voyages explorer"
+    }
+  ]
+}

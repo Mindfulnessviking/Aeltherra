@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools • Aeltherra</title>
+<meta name="description" content="Lightweight tools stored in localStorage.">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/img/logo.svg" alt="Aeltherra logo" class="logo">
+    <h1>Aeltherra • West Marches</h1>
+  </div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="world.html" class="nav-link">World</a>
+    <a href="lore.html" class="nav-link">Lore</a>
+    <a href="characters.html" class="nav-link">Characters</a>
+    <a href="factions.html" class="nav-link">Factions</a>
+    <a href="sessions.html" class="nav-link">Sessions</a>
+    <a href="tools.html" class="nav-link">Tools</a>
+  </nav>
+</header>
+
+<main class="container">
+<h2 class="section-title">Tools</h2>
+<div class="grid cards">
+  <div class="card">
+    <h3>Reincarnation Tracker</h3>
+    <form id="reincForm">
+      <label class="small">Soul name</label><br>
+      <input id="soulName" placeholder="Name" style="width:100%;padding:8px;border-radius:6px;border:1px solid rgba(100,255,218,.2);background:rgba(23,42,69,.6);color:#fff"><br><br>
+      <div class="kv">
+        <div>
+          <label class="small">Class</label><br>
+          <select id="soulClass" style="width:100%;padding:8px;border-radius:6px;background:rgba(23,42,69,.6);color:#fff;border:1px solid rgba(100,255,218,.2)">
+            <option>Cleric</option><option>Fighter</option><option>Ranger</option><option>Wizard</option><option>Rogue</option><option>Paladin</option>
+          </select>
+        </div>
+        <div>
+          <label class="small">Ancestry</label><br>
+          <select id="soulRace" style="width:100%;padding:8px;border-radius:6px;background:rgba(23,42,69,.6);color:#fff;border:1px solid rgba(100,255,218,.2)">
+            <option>Human</option><option>Elf</option><option>Dwarf</option><option>Gnome</option><option>Half-Orc</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <button class="btn" type="submit">Record</button>
+      <p id="reincOut" class="small muted"></p>
+    </form>
+  </div>
+
+  <div class="card">
+    <h3>Loot Log</h3>
+    <form id="lootForm">
+      <div class="kv">
+        <div>
+          <label class="small">Item</label><br>
+          <input id="lootName" placeholder="Item name" style="width:100%;padding:8px;border-radius:6px;border:1px solid rgba(100,255,218,.2);background:rgba(23,42,69,.6);color:#fff">
+        </div>
+        <div>
+          <label class="small">Found where</label><br>
+          <input id="lootWhere" placeholder="Location" style="width:100%;padding:8px;border-radius:6px;border:1px solid rgba(100,255,218,.2);background:rgba(23,42,69,.6);color:#fff">
+        </div>
+      </div><br>
+      <button class="btn" type="submit">Add to log</button>
+    </form>
+    <ul id="lootList" class="small"></ul>
+  </div>
+</div>
+
+</main>
+<footer class="site-footer">
+  <p>© 2025 Aeltherra West Marches. Static site ready for GitHub Pages.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

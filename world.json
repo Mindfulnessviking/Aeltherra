@@ -1,0 +1,68 @@
+{
+  "world": {
+    "name": "Aeltherra",
+    "homeBase": "Greyhaven",
+    "cosmology": {
+      "gods": [
+        "Luxion",
+        "Umbros",
+        "Veyra"
+      ],
+      "law": "Reincarnation via the Hall of the Three"
+    },
+    "ages": [
+      {
+        "name": "Age of Dawning",
+        "years": "10,000\u20138,000 YA",
+        "summary": "First civilizations. Magic emerges in daily life."
+      },
+      {
+        "name": "Age of Crowns",
+        "years": "8,000\u20135,000 YA",
+        "summary": "Empires rise. Dynastic magic. First lunar scar."
+      },
+      {
+        "name": "Age of Ashes",
+        "years": "5,000\u20133,000 YA",
+        "summary": "Continental war. Reincarnation Codex codified."
+      },
+      {
+        "name": "Age of Voyages",
+        "years": "3,000\u20131,000 YA",
+        "summary": "Global exploration. Magisteam revolution."
+      },
+      {
+        "name": "Age of Discord",
+        "years": "1,000 YA\u2013Present",
+        "summary": "Fragmented politics. Guild power. Ruins abound."
+      }
+    ],
+    "continents": [
+      {
+        "id": "Eryndral",
+        "biome": "temperate",
+        "hook": "Trade city-states and magisteam. West Marches frontier."
+      },
+      {
+        "id": "Korrath",
+        "biome": "desert",
+        "hook": "Age of Crowns vaults buried under dunes."
+      },
+      {
+        "id": "Thryos",
+        "biome": "tundra",
+        "hook": "Orcs and giants guard storm-shrines."
+      },
+      {
+        "id": "Ulmarra",
+        "biome": "jungle",
+        "hook": "Colossal beasts and first-civilization ruins."
+      },
+      {
+        "id": "VeyraSpine",
+        "biome": "islands",
+        "hook": "Magical minerals along an island backbone."
+      }
+    ]
+  }
+}

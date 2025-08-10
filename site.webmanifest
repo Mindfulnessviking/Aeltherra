@@ -1,0 +1,15 @@
+{
+  "name": "Aeltherra \u2022 West Marches",
+  "short_name": "Aeltherra",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0a192f",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aeltherra • West Marches</title>
+<meta name="description" content="A complete static website for a D&D West Marches campaign in the world of Aeltherra.">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/img/logo.svg" alt="Aeltherra logo" class="logo">
+    <h1>Aeltherra • West Marches</h1>
+  </div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="world.html" class="nav-link">World</a>
+    <a href="lore.html" class="nav-link">Lore</a>
+    <a href="characters.html" class="nav-link">Characters</a>
+    <a href="factions.html" class="nav-link">Factions</a>
+    <a href="sessions.html" class="nav-link">Sessions</a>
+    <a href="tools.html" class="nav-link">Tools</a>
+  </nav>
+</header>
+
+<main class="container">
+<section class="hero">
+  <h2>Run a large, player driven West Marches in a single static site</h2>
+  <p>Persistent world. Rotating roster. Multiple DMs. Shared state. Exploration and survival first.</p>
+  <div class="cta-row">
+    <a class="btn primary" href="world.html">Explore the World</a>
+    <a class="btn" href="sessions.html">Schedule Sessions</a>
+    <a class="btn" href="lore.html">Read the Lore</a>
+  </div>
+</section>
+
+<h3 class="section-title">Core Principles</h3>
+<div class="grid cards">
+  <div class="card"><h3>Player driven exploration</h3><p>Players choose destinations and goals. No railroading. The world responds.</p></div>
+  <div class="card"><h3>Large rotating roster</h3><p>Form a new party each session. Availability defines groups.</p></div>
+  <div class="card"><h3>Multiple DMs</h3><p>Shared canon, shared timeline, consistent rules.</p></div>
+  <div class="card"><h3>Persistent state</h3><p>Discoveries and disasters change the map for everyone.</p></div>
+  <div class="card"><h3>Session rules</h3><p>Ad hoc scheduling. Start and end at Greyhaven.</p></div>
+  <div class="card"><h3>Exploration and survival</h3><p>Mapping, supplies, weather, and danger matter. Retreat is valid.</p></div>
+</div>
+
+<h3 class="section-title">Upcoming Sessions</h3>
+<div id="sessionsBox" class="grid cards"></div>
+
+<h3 class="section-title">Recent Activity</h3>
+<div id="activityBox" class="grid cards"></div>
+
+<style>.bar{{height:8px;background:rgba(100,255,218,.15);border-radius:6px;overflow:hidden} .bar span{{display:block;height:100%;background:var(--aqua)}} </style>
+
+</main>
+<footer class="site-footer">
+  <p>© 2025 Aeltherra West Marches. Static site ready for GitHub Pages.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "factions": [
+    {
+      "name": "Celestarch Guild",
+      "influence": 62,
+      "summary": "Arcane engineers behind magisteam craft."
+    },
+    {
+      "name": "Order of the Grey Veil",
+      "influence": 54,
+      "summary": "Priests who safeguard reincarnation rites."
+    },
+    {
+      "name": "Crimson Company",
+      "influence": 41,
+      "summary": "Free company of explorers turned power brokers."
+    }
+  ]
+}

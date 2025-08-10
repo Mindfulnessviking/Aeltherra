@@ -1,0 +1,42 @@
+{
+  "upcoming": [
+    {
+      "title": "Exploration of the Whispering Ruins",
+      "where": "Korrath Desert",
+      "when": "2025-10-15T19:00:00",
+      "players": "4/6",
+      "dm": "Alistair",
+      "fill": 67
+    },
+    {
+      "title": "Journey to Frostfang Peak",
+      "where": "Thryos Mountains",
+      "when": "2025-10-18T18:30:00",
+      "players": "2/5",
+      "dm": "Seraphina",
+      "fill": 40
+    }
+  ],
+  "recent": [
+    {
+      "type": "explore",
+      "title": "Hex 7F-3A Explored",
+      "detail": "Ancient ruins found in Eryndral by the Crimson Company"
+    },
+    {
+      "type": "threat",
+      "title": "New Threat Discovered",
+      "detail": "Shadow Serpents spotted near Greyhaven"
+    },
+    {
+      "type": "artifact",
+      "title": "Artifact Recovered",
+      "detail": "Orb of Veyra recovered in Korrath Desert"
+    },
+    {
+      "type": "temple",
+      "title": "Temple Restored",
+      "detail": "Shrine of Grey in Thryos reactivated"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lore • Aeltherra</title>
+<meta name="description" content="Core myth, ages, and West Marches rules for Aeltherra.">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/img/logo.svg" alt="Aeltherra logo" class="logo">
+    <h1>Aeltherra • West Marches</h1>
+  </div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="world.html" class="nav-link">World</a>
+    <a href="lore.html" class="nav-link">Lore</a>
+    <a href="characters.html" class="nav-link">Characters</a>
+    <a href="factions.html" class="nav-link">Factions</a>
+    <a href="sessions.html" class="nav-link">Sessions</a>
+    <a href="tools.html" class="nav-link">Tools</a>
+  </nav>
+</header>
+
+<main class="container">
+<h2 class="section-title">Cosmology and Lore</h2>
+<p class="small muted">Light, Dark, and Grey define creation and balance. The cycle of souls justifies ancestry and class choices.</p>
+<div class="card">
+<pre style="white-space:pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" id="loreText"></pre>
+</div>
+<script>
+fetch('assets/data/lore.md').then(r=>r.text()).then(t=>document.querySelector('#loreText').textContent=t);
+</script>
+
+</main>
+<footer class="site-footer">
+  <p>© 2025 Aeltherra West Marches. Static site ready for GitHub Pages.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

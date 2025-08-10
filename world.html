@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World • Aeltherra</title>
+<meta name="description" content="Interactive map of Aeltherra and historical ages.">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/img/logo.svg" alt="Aeltherra logo" class="logo">
+    <h1>Aeltherra • West Marches</h1>
+  </div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="world.html" class="nav-link">World</a>
+    <a href="lore.html" class="nav-link">Lore</a>
+    <a href="characters.html" class="nav-link">Characters</a>
+    <a href="factions.html" class="nav-link">Factions</a>
+    <a href="sessions.html" class="nav-link">Sessions</a>
+    <a href="tools.html" class="nav-link">Tools</a>
+  </nav>
+</header>
+
+<main class="container">
+<div class="kv">
+  <div>
+    <h2 class="section-title">World Map</h2>
+    <p class="muted small">Click a continent to load details.</p>
+    <object id="worldMap" data="assets/img/map.svg" type="image/svg+xml" style="width:100%;height:auto;border:1px solid rgba(100,255,218,.2);border-radius:12px"></object>
+  </div>
+  <div id="worldInfo">
+    <h2 class="section-title">Aeltherra</h2>
+    <p class="small">Home base: Greyhaven. Reincarnation law: souls cycle through the Hall of the Three.</p>
+    <table class="table small">
+      <thead><tr><th>Age</th><th>Years</th><th>Summary</th></tr></thead>
+      <tbody id="ageRows"></tbody>
+    </table>
+  </div>
+</div>
+<script>
+fetch('assets/data/world.json').then(r=>r.json()).then(d=>{
+  const tb = document.querySelector('#ageRows');
+  tb.innerHTML = d.world.ages.map(a=>`<tr><td>${a.name}</td><td>${a.years}</td><td>${a.summary}</td></tr>`).join('');
+});
+</script>
+
+</main>
+<footer class="site-footer">
+  <p>© 2025 Aeltherra West Marches. Static site ready for GitHub Pages.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
